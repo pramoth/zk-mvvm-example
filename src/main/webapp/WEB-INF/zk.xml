@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="x-windows-874"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<zk>
+<desktop-config>
+    <desktop-timeout>3600</desktop-timeout>
+    <file-check-period>2</file-check-period>
+    <extendlet-check-period>10</extendlet-check-period>
+</desktop-config>
+</zk>
