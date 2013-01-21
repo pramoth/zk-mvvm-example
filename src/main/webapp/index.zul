@@ -1,4 +1,6 @@
-<window title="Search" width="600px" border="normal">
-    <!-- put child components inside a tag's body -->
-    555555555550550505050--z
-</window>
+<zk xmlns="http://www.zkoss.org/2005/zul" xmlns:h="http://www.zkoss.org/2005/zk/native">
+    <window title="Search" width="600px" border="normal" apply="">
+        <!-- put child components inside a tag's body -->
+        555555555550550505050--z
+    </window>
+</zk>
