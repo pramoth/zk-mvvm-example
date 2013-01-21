@@ -14,5 +14,5 @@ import th.co.geniustree.zk.example.zkmvvmexample.model.Hospital;
  * @author pramoth
  */
 public interface HospitalRepo extends JpaRepository<Hospital, String> {
-    public List<Hospital> findLikeHmainOrHname(String keyword);
+    public List<Hospital> findByHmainLikeOrHnameLike(String hmain,String hname);
 }

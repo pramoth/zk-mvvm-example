@@ -1,6 +1,20 @@
 <zk xmlns="http://www.zkoss.org/2005/zul" xmlns:h="http://www.zkoss.org/2005/zk/native">
-    <window title="Search" width="600px" border="normal" apply="">
-        <!-- put child components inside a tag's body -->
-        555555555550550505050--z
+    <window title="Search" width="600px" border="normal" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('th.co.geniustree.zk.example.zkmvvmexample.vmodel.SearhHospitalViewModel')">
+        Search:
+        <textbox value="@bind(vm.keyword)"/>
+        <button label="Search" onClick="@command('search')"/>
+        <button label="changeHname" onClick="@command('changeHname')"/>
+        <listbox height="160px" model="@bind(vm.hospitals)" emptyMessage="No car found in the result">
+            <listhead>
+                <listheader label="Hmain" />
+                <listheader label="Hname" />
+            </listhead>
+            <template name="model">
+                <listitem>
+                    <listcell label="@bind(each.hmain)"></listcell>
+                    <listcell label="@bind(each.hname)"></listcell>
+                </listitem>
+            </template>
+        </listbox>
     </window>
 </zk>

@@ -3,7 +3,8 @@
   <persistence-unit name="zk-mvvm-example" transaction-type="JTA">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <jta-data-source>jdbc/deficientdrugs</jta-data-source>
-    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <class>th.co.geniustree.zk.example.zkmvvmexample.model.Hospital</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="eclipselink.ddl-generation" value="create-tables"/>
       <property name="eclipselink.weaving" value="static"/>
