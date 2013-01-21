@@ -32,5 +32,5 @@
     <bean id="jpaDialect" class="org.springframework.orm.jpa.vendor.EclipseLinkJpaDialect " /> 
     <tx:jta-transaction-manager />
     <tx:annotation-driven />
-    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/deficientdrugs" />
+    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/drugowner" />
 </beans>

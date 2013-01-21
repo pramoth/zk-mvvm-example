@@ -9,17 +9,38 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import org.eclipse.persistence.annotations.ReadOnly;
 
 /**
  *
  * @author pramoth
  */
 @Entity
+@ReadOnly
 public class Hospital implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
+    private String hmain;
+    private String hcode;
+
+    public String getHmain() {
+        return hmain;
+    }
+
+    public void setHmain(String hmain) {
+        this.hmain = hmain;
+    }
+
+    public String getHcode() {
+        return hcode;
+    }
+
+    public void setHcode(String hcode) {
+        this.hcode = hcode;
+    }
+    
 
     public String getId() {
         return id;
