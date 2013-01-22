@@ -1,5 +1,5 @@
 <zk xmlns="http://www.zkoss.org/2005/zul" xmlns:h="http://www.zkoss.org/2005/zk/native">
-    <window title="Search" width="600px" border="normal" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('th.co.geniustree.zk.example.zkmvvmexample.vmodel.SearhHospitalViewModel')">
+    <window title="Search ZK MVVM Tutorial Application." width="600px" border="normal" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('th.co.geniustree.zk.example.zkmvvmexample.vmodel.SearhHospitalViewModel')">
         Search:
         <textbox value="@bind(vm.keyword)"/>
         <button label="Search" onClick="@command('search')"/>
